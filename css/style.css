@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+main h1 {
+  color: white;
+  background-color: black; }
+
+main .primeraSeccion {
+  padding: 1rem;
+  background-color: gray; }
+
+main p {
+  text-align: center; }
+
+.segundaSeccion {
+  font-family: sans-serif; }
+
+.logoDesktop {
+  height: 130px;
+  width: 130px;
+  margin: 5px 5px 5px 25px; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
+
+.header {
+  grid-area: header;
+  display: flex;
+  background-color: #ff8952;
+  background-image: linear-gradient(to left, #ff8952, #e5dbd9); }
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: #e5dbd9; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 230px; }
+
+ul {
+  display: flex; }
+
+li {
+  list-style: none;
+  padding: 5px;
+  border: solid 1px #999594;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 25px;
+  animation-name: cambioColor;
+  animation-duration: 5s; }
+
+a {
+  text-decoration: none;
+  color: #e5dbd9;
+  font-family: 'Montserrat', sans-serif; }
