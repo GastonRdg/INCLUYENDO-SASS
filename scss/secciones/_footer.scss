@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    background-color: $colorPrincipal;
+    padding: 2rem;
+    background-image: linear-gradient(to left, $colorPrincipal, #e5dbd9);
+  
+    p {
+      font-size: 25px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    ol {
+      li a {
+        color: $colorSecundario;
+        font-size: 40px;
+        padding: 10px;
+      }
+  
+      display: flex;
+      list-style: none;
+    }
+  }

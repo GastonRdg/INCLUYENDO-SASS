@@ -1,21 +1,127 @@
+.section1 {
+  display: flex;
+  grid-area: section1;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
+  img {
+    height: 450px;
+    width: 500px;
+    margin: 50px;
+    border: solid 3px $colorPrincipal;
+    border-radius: 5px;
+    padding: 5px;
 
-main{
+    /*transform: translate(0px 0px 50px)*/
+  }
 
-    h1{
-        color: white;
-        background-color: black;
-    }
-    
-        .primeraSeccion{
-            padding: 1rem;
-            background-color: gray;
-        }
-        p{
-           text-align: center;
-        }
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
-.segundaSeccion{
-    font-family: sans-serif;
+.frase1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  border-right: solid 5px #999594;
+  padding-right: 40px;
+  color: $colorPrincipal;
+}
+
+.frase2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: $colorSecundario;
+}
+
+/*section1*/
+/*section2*/
+
+.section2 {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+
+  img {
+    height: 300px;
+    width: 350px;
+    padding: 5px;
+    margin: 50px;
+
+    /* position: relative;
+      left: 100px; */
+    border: solid 3px $colorPrincipal;
+    border-radius: 5px;
+  }
+
+  grid-area: section2;
+}
+
+@keyframes cambioColor {
+  0% {
+    background-color: #e5dbd9;
+  }
+
+  25% {
+    background-color: burlywood;
+  }
+
+  50% {
+    background-color: darkgoldenrod;
+  }
+
+  100% {
+    background-color: #ff8952;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 520px) {
+  .section1 {
+    flex-direction: column;
+  }
+
+  .section1 img {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 50px;
+  }
+
+  .frase1 {
+    display: flex;
+    font-size: 50px;
+    padding-right: 0px;
+
+  }
+}
+@media (max-width: 418px) {
+  .section1 img {
+    height: 200px;
+    width: 200px;
+
+}
+
+.frase1 {
+    padding-right: 10px;
+    font-size: 50px;
+}
+
+.section2 img {
+    margin: 2px;
+    height: 200px;
+    width: 250px;
+}
 }

@@ -1,22 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
-main h1 {
-  color: white;
-  background-color: black; }
+.section1 {
+  display: flex;
+  grid-area: section1;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .section1 img {
+    height: 450px;
+    width: 500px;
+    margin: 50px;
+    border: solid 3px #ff8952;
+    border-radius: 5px;
+    padding: 5px;
+    /*transform: translate(0px 0px 50px)*/ }
+  .section1 p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
 
-main .primeraSeccion {
-  padding: 1rem;
-  background-color: gray; }
+.frase1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  border-right: solid 5px #999594;
+  padding-right: 40px;
+  color: #ff8952; }
 
-main p {
-  text-align: center; }
+.frase2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #999594; }
 
-.segundaSeccion {
-  font-family: sans-serif; }
+/*section1*/
+/*section2*/
+.section2 {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  grid-area: section2; }
+  .section2 img {
+    height: 300px;
+    width: 350px;
+    padding: 5px;
+    margin: 50px;
+    /* position: relative;
+      left: 100px; */
+    border: solid 3px #ff8952;
+    border-radius: 5px; }
 
+@keyframes cambioColor {
+  0% {
+    background-color: #e5dbd9; }
+  25% {
+    background-color: burlywood; }
+  50% {
+    background-color: darkgoldenrod; }
+  100% {
+    background-color: #ff8952; } }
+
+@media (max-width: 1050px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap; } }
+
+@media (max-width: 520px) {
+  .section1 {
+    flex-direction: column; }
+  .section1 img {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 50px; }
+  .frase1 {
+    display: flex;
+    font-size: 50px;
+    padding-right: 0px; } }
+
+@media (max-width: 418px) {
+  .section1 img {
+    height: 200px;
+    width: 200px; }
+  .frase1 {
+    padding-right: 10px;
+    font-size: 50px; }
+  .section2 img {
+    margin: 2px;
+    height: 200px;
+    width: 250px; } }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+/*header*/
 .logoDesktop {
+  align-items: center;
   height: 130px;
   width: 130px;
   margin: 5px 5px 5px 25px; }
@@ -24,43 +108,138 @@ main p {
 .grilla {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: "header header header header" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer"; }
 
 .header {
+  justify-content: flex-start;
+  flex-wrap: wrap;
   grid-area: header;
   display: flex;
   background-color: #ff8952;
-  background-image: linear-gradient(to left, #ff8952, #e5dbd9); }
-
-h1 {
-  display: flex;
+  background-image: linear-gradient(to left, #ff8952, #e5dbd9);
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-  color: #e5dbd9; }
+  padding: 2rem;
+  align-content: stretch;
+  flex-direction: column; }
+  .header h1 {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #e5dbd9; }
+  .header nav {
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; }
+    .header nav ul {
+      display: flex;
+      padding: 10px; }
+      .header nav ul li {
+        list-style: none;
+        padding: 5px;
+        border: solid 1px #999594;
+        border-radius: 5px;
+        margin: 2px;
+        font-size: 15px;
+        animation-name: cambioColor;
+        animation-duration: 5s; }
+  .header li:hover {
+    background-color: coral;
+    transition: .3s;
+    transform: scale(1.2); }
+  .header a {
+    text-decoration: none;
+    color: #e5dbd9;
+    font-family: 'Montserrat', sans-serif; }
 
-nav {
+@media (max-width: 520px) {
+  .header {
+    flex-direction: column; }
+  nav ul {
+    display: flex;
+    flex-direction: column; } }
+
+form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 230px; }
-
-ul {
-  display: flex; }
-
-li {
-  list-style: none;
-  padding: 5px;
-  border: solid 1px #999594;
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
   border-radius: 5px;
-  margin: 5px;
-  font-size: 25px;
-  animation-name: cambioColor;
-  animation-duration: 5s; }
+  flex-wrap: wrap; }
 
-a {
-  text-decoration: none;
-  color: #e5dbd9;
-  font-family: 'Montserrat', sans-serif; }
+h2 {
+  color: black;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px; }
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 17px;
+  border: none; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+#boton {
+  background: #999594;
+  color: #ff8952;
+  padding: 20px; }
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
+
+.section4, .section5, .section6 {
+  display: flex;
+  justify-content: center; }
+
+.section4 img, .section5 img, .section6 img {
+  margin: 10px;
+  height: 300px;
+  width: 350px;
+  padding: 2px;
+  border: 1px solid #ff8952;
+  border-radius: 5px; }
+
+@media (max-width: 735px) {
+  .section4 img, .section5 img, .section6 img {
+    height: 200px;
+    width: 250px; } }
+
+@media (max-width: 520px) {
+  .section4, .section5, .section6 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  grid-area: footer;
+  background-color: #ff8952;
+  padding: 2rem;
+  background-image: linear-gradient(to left, #ff8952, #e5dbd9); }
+  .footer p {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif; }
+  .footer ol {
+    display: flex;
+    list-style: none; }
+    .footer ol li a {
+      color: #999594;
+      font-size: 40px;
+      padding: 10px; }

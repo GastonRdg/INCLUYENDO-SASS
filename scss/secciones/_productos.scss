@@ -1,0 +1,28 @@
+.section4, .section5, .section6 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section4 img, .section5 img, .section6 img {
+    margin: 10px;
+    height: 300px;
+    width: 350px;
+    padding: 2px;
+    border: 1px solid #ff8952;
+    border-radius: 5px;
+  }
+
+  @media(max-width: 735px){
+    .section4 img, .section5 img, .section6 img{
+        height: 200px;
+        width: 250px;
+    }
+
+}
+@media(max-width: 520px){
+    .section4,.section5, .section6 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,50 @@
+form {
+    display: flex;
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+  
+  h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+  #boton {
+    background: #999594;
+    color: $colorPrincipal;
+    padding: 20px;
+  }
+
+  @media(max-width: 480px) {
+    form{
+        width: 100%;
+    }
+}
