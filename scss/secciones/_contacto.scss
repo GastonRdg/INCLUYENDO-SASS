@@ -38,13 +38,13 @@ form {
   }
   
   #boton {
-    background: #999594;
+    background: $colorSecundario;
     color: $colorPrincipal;
     padding: 20px;
   }
 
   @media(max-width: 480px) {
     form{
-        width: 100%;
+        width:$ancho;
     }
 }

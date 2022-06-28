@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+@import './variables/mixin';
+@import './variables/extend';
+@import './variables/tamanios';
 @import './variables/colores.scss';
 @import './secciones/index';
 @import './secciones/header';

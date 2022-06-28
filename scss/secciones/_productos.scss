@@ -1,17 +1,29 @@
-.section4, .section5, .section6 {
-    display: flex;
-    justify-content: center;
-  }
+// .section4, .section5, .section6 {
+//     display: flex;
+//     justify-content: center;
+//   }
+.productos{
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+    align-items: center;
+  
+}
+
   
   .section4 img, .section5 img, .section6 img {
     margin: 10px;
     height: 300px;
     width: 350px;
     padding: 2px;
-    border: 1px solid #ff8952;
+    border: 1px solid $colorPrincipal;
     border-radius: 5px;
   }
-
+button{
+  @include btn-verMas ($colorPrincipal, $tercerColor);
+  display: flex;
+  align-items: center;
+}
   @media(max-width: 735px){
     .section4 img, .section5 img, .section6 img{
         height: 200px;

@@ -1,0 +1,8 @@
+@mixin btn-verMas($colorFondo, $colorLetra){
+    height: 50px;
+    width:50px;
+    margin: auto;
+    background-color: $colorFondo;
+    color: $colorLetra;
+    border-radius: 5px;
+}
