@@ -95,6 +95,8 @@
   .frase1 {
     padding-right: 10px;
     font-size: 50px; }
+  .frase2 {
+    font-size: 20px; }
   .section2 img {
     margin: 2px;
     height: 200px;
@@ -158,6 +160,38 @@
   nav ul {
     display: flex;
     flex-direction: column; } }
+
+.quienes {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .quienes img {
+    height: 40rem;
+    border: solid 3px #ff8952;
+    border-radius: 5px;
+    padding: 5px; }
+  .quienes p {
+    font-size: 2rem;
+    margin: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #999594; }
+
+@media (max-width: 960px) {
+  .quienes img {
+    height: 30rem; } }
+
+@media (max-width: 740px) {
+  .quienes img {
+    height: 25rem; } }
+
+@media (max-width: 615px) {
+  .quienes img {
+    height: 15rem; } }
+
+@media (max-width: 425px) {
+  .quienes img {
+    height: 12rem; } }
 
 form {
   display: flex;
@@ -237,6 +271,39 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap; } }
+
+.eventos img {
+  margin: 10px;
+  height: 500px;
+  width: 550px;
+  padding: 2px;
+  border: 1px solid #ff8952;
+  border-radius: 5px; }
+
+.eventos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center; }
+
+.eventos p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px; }
+
+@media (max-width: 560px) {
+  .eventos img {
+    height: 300px;
+    width: 350px; }
+  .eventos p {
+    font-size: 25px; } }
+
+@media (max-width: 360px) {
+  .eventos img {
+    height: 200px;
+    width: 250px; }
+  .eventos p {
+    font-size: 20px; } }
 
 .footer {
   display: flex;

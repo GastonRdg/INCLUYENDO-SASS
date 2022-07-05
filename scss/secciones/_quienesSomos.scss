@@ -1,0 +1,53 @@
+.quienes {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 40rem;
+        border: solid 3px $colorPrincipal;
+        border-radius: 5px;
+        padding: 5px;
+
+    }
+    p{
+        font-size: 2rem;
+        margin: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: $colorSecundario;
+    }
+}
+@media (max-width: 960px) {
+
+    .quienes{
+        img{
+            height: 30rem;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+
+    .quienes{
+        img{
+            height: 25rem;
+        }
+    }
+}
+@media (max-width: 615px) {
+
+    .quienes{
+        img{
+            height: 15rem;
+        }
+    }
+}
+@media (max-width: 425px) {
+
+    .quienes{
+        img{
+            height: 12rem;
+        }
+    }
+}

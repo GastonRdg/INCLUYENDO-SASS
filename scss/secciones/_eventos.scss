@@ -1,0 +1,40 @@
+.eventos  img{
+    margin: 10px;
+    height: 500px;
+    width: 550px;
+    padding: 2px;
+    border: 1px solid $colorPrincipal;
+    border-radius: 5px;
+}
+.eventos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+}
+.eventos p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 560px){
+    .eventos  img{
+    height: 300px;
+    width: 350px;
+    
+}
+.eventos p{
+    font-size: 25px;
+}
+}
+@media (max-width: 360px){
+    .eventos  img{
+        height: 200px;
+        width: 250px;
+        
+    }
+    .eventos p{
+        font-size: 20px;
+    }
+}
