@@ -1,40 +1,97 @@
-// .section4, .section5, .section6 {
-//     display: flex;
-//     justify-content: center;
-//   }
-.productos{
-  display: flex;
-  margin: 1rem;
-  flex-direction: column;
-    align-items: center;
-  
-}
 
-  
-  .section4 img, .section5 img, .section6 img {
-    margin: 10px;
-    height: 300px;
-    width: 350px;
-    padding: 2px;
-    border: 1px solid $colorPrincipal;
-    border-radius: 5px;
-  }
-button{
-  @include btn-verMas ($colorPrincipal, $tercerColor);
+.Productos {
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
-  @media(max-width: 735px){
-    .section4 img, .section5 img, .section6 img{
-        height: 200px;
-        width: 250px;
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+
+    img {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      object-fit: cover;
     }
 
-}
-@media(max-width: 520px){
-    .section4,.section5, .section6 {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: $tercerColor;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
     }
+  }
+
+  .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: rgb(3, 35, 54);
+    padding: 15px;
+    color: $tercerColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+
+    .link {
+      border-top: solid 1px $tercerColor;
+      height: 50px;
+      line-height: 50px;
+
+      .a {
+        color: $tercerColor;
+      }
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+    }
+
+    .productos {
+      letter-spacing: 1px;
+    }
+  }
+
+  &:hover {
+    .front {
+      transform: perspective(600px) rotateY(180deg);
+    }
+
+    .back {
+      transform: perspective(600px) rotateY(360deg);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Productos {
+    display: flex;
+    flex-direction: column;
+  }
 }

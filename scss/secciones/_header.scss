@@ -4,80 +4,175 @@
   padding: 0;
   margin: 0;
 }
-
-/*header*/
+#principal{
+  background-image: url(https://res.cloudinary.com/dhqzdudwn/image/upload/v1658635783/mut%20/photo-1596787071320-c06155930dae_dv811o.avif);
+}
+.menu {
+  background-color: #ff8952;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+}
 
 .logoDesktop {
- @extend %estilo;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
 }
 
-.grilla {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer";
+.logo {
+  color: #fff;
+  font-size: 35px;
+  padding: 0 10px;
+  margin: 10px;
+  font-weight: bold;
+  border: solid 2px;
+  border-radius: 5px;
 }
 
-.header {
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  grid-area: header;
+.nav {
   display: flex;
-  background-color: $colorPrincipal;
-  background-image: linear-gradient(to left, $colorPrincipal, $tercerColor);
-  align-items: center;
-  padding: 2rem;
-  align-content: stretch;
-  flex-direction: column;
+  list-style: none;
+  margin-right: 30px;
 
-  h1 {
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    color: $tercerColor;
+  li {
+    border-radius: 3px;
+    margin: 0 5px;
+
+    a {
+      padding: 7px 13px;
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: .4s;
+    }
+  }
+}
+
+li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .4s;
+}
+
+.btn {
+  margin-right: 30px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
   }
 
-  nav {
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+  .logo {
+    font-size: 30px;
+  }
 
-    ul {
-      display: flex;
-      padding: 10px;
+  .logoDesktop {
+    height: 6rem;
+    width: 6rem;
+    margin: 2px;
+  }
+}
 
-      li {
-        list-style: none;
-        padding: 5px;
-        border: solid 1px $colorSecundario;
-        border-radius: 5px;
-        margin: 2px;
-        font-size: 15px;
-        animation-name: cambioColor;
-        animation-duration: 5s;
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 35px;
+  }
+
+  .nav li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .menu {
+    display: flex;
+    height: 85px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .btn {
+    display: inline-flex;
+    display: block;
+  }
+
+  .nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+
+    /* height: calc(100% - 65%) ; */
+    height: 100vh;
+    background: #414141;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: flex-end;
+
+    li {
+      display: block;
+      margin: 30px 50px 0 0;
+      line-height: 30px;
+      border-radius: 10px;
+
+      a {
+        font-size: 20px;
+      }
+
+      &:hover {
+        background: none;
+      }
+
+      a {
+        display: flex;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+
+        &:hover {
+          color: #ff8952;
+        }
       }
     }
   }
 
-  li:hover {
-    background-color: coral;
-    transition: .3s;
-    transform: scale(1.2);
+  .logo {
+    font-size: 25px;
+    padding-left: 35px;
   }
 
-  a {
-    text-decoration: none;
-    color: $tercerColor;
-    font-family: 'Montserrat', sans-serif;
+  #btn:checked ~ .nav {
+    left: 0;
+  }
+
+  .logoDesktop {
+    height: 4rem;
+    width: 4rem;
   }
 }
 
-@media (max-width: 520px){
-  .header{
-    flex-direction: column;
-  }
- nav ul{
-      display: flex;
-      flex-direction: column;
-    }
-    }

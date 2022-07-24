@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 .quienes {
     margin: 1rem;
     display: flex;
@@ -12,10 +14,10 @@
 
     }
     p{
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 2rem;
         font-family: 'Montserrat', sans-serif;
-        color: $colorSecundario;
+        color: $tercerColor;
     }
 }
 @media (max-width: 960px) {
@@ -49,5 +51,11 @@
         img{
             height: 12rem;
         }
+    }
+}
+
+p{
+    &:hover{
+        color: $sextoColor;
     }
 }

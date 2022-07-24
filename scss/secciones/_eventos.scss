@@ -2,8 +2,8 @@
     margin: 10px;
     height: 500px;
     width: 550px;
-    padding: 2px;
-    border: 1px solid $colorPrincipal;
+    padding: 5px;
+    border: 3px solid $colorPrincipal;
     border-radius: 5px;
 }
 .eventos{
@@ -16,6 +16,7 @@
 .eventos p{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    color: $tercerColor;
 }
 
 @media (max-width: 560px){

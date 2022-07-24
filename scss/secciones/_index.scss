@@ -1,3 +1,11 @@
+body{
+  background-image: url(https://images.unsplash.com/photo-1591195854242-8804547cdcab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dGV4dHVyYXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  background-attachment: fixed;
+}
 .section1 {
   display: flex;
   grid-area: section1;
@@ -33,8 +41,8 @@
 
 .frase2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  color: $colorSecundario;
+  font-size: 40px;
+  color: $tercerColor;
 }
 
 /*section1*/
@@ -59,6 +67,7 @@
 
   grid-area: section2;
 }
+
 
 @keyframes cambioColor {
   0% {
@@ -127,4 +136,11 @@
     height: 200px;
     width: 250px;
 }
+}
+
+img{
+  &:hover{
+   filter: brightness(50%);
+   transition: .3s;
+  }
 }
