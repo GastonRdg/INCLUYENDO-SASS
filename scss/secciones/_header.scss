@@ -4,9 +4,11 @@
   padding: 0;
   margin: 0;
 }
-#principal{
+
+#principal {
   background-image: url(https://res.cloudinary.com/dhqzdudwn/image/upload/v1658635783/mut%20/photo-1596787071320-c06155930dae_dv811o.avif);
 }
+
 .menu {
   background-color: #ff8952;
   height: 100px;
@@ -119,11 +121,10 @@ li.active {
   }
 
   .nav {
-    display: flex;
+    // display: flex;
     position: fixed;
     width: 100vw;
-
-    /* height: calc(100% - 65%) ; */
+    height: calc(100% - 65%);
     height: 100vh;
     background: #414141;
     top: 80px;
@@ -166,7 +167,7 @@ li.active {
     padding-left: 35px;
   }
 
-  #btn:checked ~ .nav {
+  #btn:checked~.nav {
     left: 0;
   }
 
@@ -175,4 +176,3 @@ li.active {
     width: 4rem;
   }
 }
-

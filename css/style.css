@@ -70,6 +70,12 @@ body {
   100% {
     background-color: #ff8952; } }
 
+@media (max-width: 1200px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 @media (max-width: 1050px) {
   .section2 {
     display: flex;
@@ -107,7 +113,8 @@ body {
 
 img:hover {
   filter: brightness(50%);
-  transition: .3s; }
+  transition: .3s;
+  transform: scale(1.1); }
 
 * {
   padding: 0;
@@ -201,10 +208,9 @@ li.active {
     display: inline-flex;
     display: block; }
   .nav {
-    display: flex;
     position: fixed;
     width: 100vw;
-    /* height: calc(100% - 65%) ; */
+    height: calc(100% - 65%);
     height: 100vh;
     background: #414141;
     top: 80px;
@@ -277,11 +283,12 @@ p:hover {
 form {
   display: flex;
   width: 450px;
-  margin: 300px;
+  margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 90px;
+  margin-bottom: 90px;
   border-radius: 5px;
   flex-wrap: wrap; }
 
