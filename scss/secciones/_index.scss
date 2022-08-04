@@ -19,6 +19,7 @@ body{
     border: solid 3px $colorPrincipal;
     border-radius: 5px;
     padding: 5px;
+    
 
     /*transform: translate(0px 0px 50px)*/
   }
@@ -106,6 +107,7 @@ body{
 @media (max-width: 520px) {
   .section1 {
     flex-direction: column;
+
   }
 
   .section1 img {
@@ -126,6 +128,7 @@ body{
   .section1 img {
     height: 200px;
     width: 200px;
+    
 
 }
 

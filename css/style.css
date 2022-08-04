@@ -196,14 +196,16 @@ li.active {
     font-size: 30px;
     padding-left: 35px; }
   .nav li a {
-    font-size: 16px; } }
+    font-size: 16px;
+    z-index: 1; } }
 
 @media (max-width: 858px) {
   .menu {
     display: flex;
     height: 85px;
     flex-direction: row-reverse;
-    justify-content: space-around; }
+    justify-content: space-around;
+    z-index: 1; }
   .btn {
     display: inline-flex;
     display: block; }
@@ -219,7 +221,8 @@ li.active {
     transition: all .4s;
     flex-direction: row-reverse;
     flex-direction: column;
-    align-items: flex-end; }
+    align-items: flex-end;
+    z-index: 1; }
     .nav li {
       display: block;
       margin: 30px 50px 0 0;
@@ -287,7 +290,7 @@ form {
   background: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 90px;
+  margin-top: 235px;
   margin-bottom: 90px;
   border-radius: 5px;
   flex-wrap: wrap; }
