@@ -95,7 +95,9 @@ body {
   .frase1 {
     display: flex;
     font-size: 50px;
-    padding-right: 0px; } }
+    padding-right: 0px; }
+  .frase2 {
+    font-size: 25px; } }
 
 @media (max-width: 418px) {
   .section1 img {
@@ -105,7 +107,7 @@ body {
     padding-right: 10px;
     font-size: 50px; }
   .frase2 {
-    font-size: 20px; }
+    font-size: 15px; }
   .section2 img {
     margin: 2px;
     height: 200px;
