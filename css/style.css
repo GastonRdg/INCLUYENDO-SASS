@@ -99,6 +99,11 @@ body {
   .frase2 {
     font-size: 25px; } }
 
+@media (max-width: 450px) {
+  .section1 img {
+    margin: 10px;
+    margin-top: 40px; } }
+
 @media (max-width: 418px) {
   .section1 img {
     height: 200px;
