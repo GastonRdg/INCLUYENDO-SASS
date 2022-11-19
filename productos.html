@@ -10,7 +10,9 @@
     <title>MUT - PRODUCTOS</title>
 </head> 
 <body id:"index">
-    
+    <div class="nav-container">
+        <div id="fila_prueba" style="background-color:#aaa; text-align:center;">
+
 <header class="header">
 <nav class="menu">
     <input type="checkbox" id="btn">
@@ -32,7 +34,17 @@
 
 </nav>
 </header>
-<main>
+
+
+
+<h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidadCarrito"></span></h1>
+</div>
+<div id="dataDolar" ></div>
+
+<div id="shopContent" class="shop-content"></div>
+
+    <div id="modal-container" class="modal-container"></div>
+<!--<main>
 
 <section class="Productos">
 
@@ -147,7 +159,15 @@
 
 </section>
 
-</main>
+</main>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+<script src="./js/productos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
 
 <footer class="footer">
     <p>&copy Gaston Rodriguez</p>

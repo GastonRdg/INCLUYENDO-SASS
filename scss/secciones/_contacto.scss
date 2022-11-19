@@ -1,4 +1,73 @@
-form {
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: 550px;
+  margin: auto;
+
+  label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+
+    span {
+      color: #DA1414;
+    }
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #0F0A0A88;
+}
+
+.contact {
+  margin-block-end: 5em;
+}
+.botn{
+  font-size: 40px;
+  border-radius: 50px;
+  
+
+}
+  
+#trucazo {
+  opacity: 0;
+}
+
+
+  
+  
+
+@media screen and (min-width: 768px) {
+  .form .tag span {
+    display: block;
+    text-align: center;
+    
+  }
+}
+  
+/*form {
     display: flex;
     width: 450px;
     margin: auto;
@@ -48,4 +117,4 @@ form {
     form{
         width:$ancho;
     }
-}
+}*/

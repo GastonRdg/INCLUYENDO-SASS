@@ -29,16 +29,29 @@
 
 </nav>
     </header>
-
-    <section class="formulario">
-        <form action="#">
-        <h2>Contacto</h2>
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="text" name="Correo" placeholder="Correo">
-        <input type="text" name="Telefono" placeholder="Telefono">
-        <textarea name="mensaje" placeholder="Escriba su consulta"></textarea>
-        <input type="button" value="ENVIAR" id="boton">
-</form>
+    <section class="contact">
+        <div class="u-wrapper">
+          <div class="contact-content">
+    
+            <form id="form" action="" class="form">
+              <h3 class="tag"><span>DEJANOS TU CONSULTA</span></h3>
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Gaston">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="text" id="email" required placeholder="mut@gmail.com">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="botn">Enviar Consulta</button>
+            </form>
+            <a href="mailto:rdggaston94@gmail.com" id="trucazo"></a>
+          </div>
+        </div>
+      </section>
+      
+<script src="./js/productos.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/formulario.js"></script>
 
     <footer class="footer">
         <p>&copy Gaston Rodriguez</p>

@@ -1,4 +1,4 @@
-.Productos {
+/*.Productos {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,4 +93,146 @@
     display: flex;
     flex-direction: column;
   }
+}*/
+
+.ver-carrito {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+}
+
+.shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 220px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+  > img {
+    border: 2px $colorPrincipal;
+    width: 90%;
+    height: 250px;
+    border-radius: 5px;
+  }
+}
+
+.precio {
+  color: $tercerColor;
+  font-size: 25px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: $colorSecundario;
+  background-color: $colorPrincipal;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  font-size: 18px;
+  border-radius: 5px;
+  
+ li.active {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .4s;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+ 
+}
+
+.modal-container {
+  width: 80%;
+  margin: 0 10%;
+  max-height: 88vh;
+  color: #fff;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: auto;
+  z-index: 9;
+  top: 12vh;
+  scrollbar-color: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-header-title {
+  justify-self: start;
+}
+
+.modal-header-button {
+  cursor: pointer;
+}
+
+.modal-container > {
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+
+  div > img {
+    height: 120px;
+    width: 120px;
+    padding-bottom: 10px;
+  }
+}
+
+.total-content {
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delete-productos {
+  cursor: pointer;
+}
+
+.cantidad.carrito {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 14px;
+  position: absolute;
+  display: none;
+}
+
+.sumar, .restar {
+  cursor: pointer;
 }
